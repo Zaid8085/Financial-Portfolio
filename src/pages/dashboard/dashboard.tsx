@@ -8,7 +8,7 @@ import {
 } from "../../constants/text";
 import Header from "../../components/header";
 
-export const Dashboard = () => {
+const Dashboard = () => {
   return (
     <main className="w-full lg:h-full bg-neutral-50">
       <Header />
@@ -35,3 +35,5 @@ export const Dashboard = () => {
     </main>
   );
 };
+
+export default Dashboard;

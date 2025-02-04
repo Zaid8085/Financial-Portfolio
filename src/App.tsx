@@ -14,12 +14,6 @@ function App() {
   } else {
     return <Navigate to="/login" />;
   }
-  // }
-  // return (
-  //   <div className="text-2xl flex-auto">
-  //     <Outlet />
-  //   </div>
-  // );
 }
 
 export default App;

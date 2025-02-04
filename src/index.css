@@ -1,0 +1,86 @@
+@import "tailwindcss" important;
+@import "tailwindcss/preflight";
+
+@tailwind utilities;
+
+.my-custom-class {
+  @apply bg-blue-500 text-white p-4 rounded-lg shadow-lg;
+}
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white min-h-screen;
+  }
+
+  .required::after {
+    content: " *";
+    color: red;
+  }
+}
+
+.primary-btn {
+  @apply bg-sky-600 hover:bg-sky-500 transition-all shadow-sky-200 text-white font-medium font-mono py-4 px-6 rounded-full cursor-pointer hover:scale-105;
+}
+
+.logout-btn {
+  @apply bg-red-100 hover:bg-red-200 transition-all text-red-700 text-sm font-medium font-mono py-2 px-3 rounded-full cursor-pointer;
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.input {
+  @apply w-full shadow-2xl border-2 border-sky-300 rounded-full p-4;
+}
+.input-label {
+  @apply text-lg lg:text-2xl font-bold m-2 text-sky-600;
+}
+
+/* Headings */
+.h-1 {
+  @apply text-2xl text-sky-600 bg-clip-text font-bold font-stretch-200% underline italic decoration-0 text-center w-[40%];
+}
+.h-2 {
+  @apply text-2xl font-bold text-sky-800 m-5 underline;
+}
+.subHeading-2 {
+  @apply text-sm font-normal text-neutral-400;
+}
+.logo-text-dark {
+  @apply text-xl text-sky-600 font-bold font-stretch-expanded leading-40;
+}
+
+.logo-text-light {
+  @apply text-xl text-white font-bold font-stretch-expanded leading-40;
+}
+
+/* Css for table */
+.table {
+  @apply min-w-full bg-white shadow-md rounded-lg overflow-hidden border border-sky-500;
+}
+.table-head {
+  @apply bg-sky-500 text-white;
+}
+.table-body {
+  @apply text-sm text-neutral-400;
+}
+.header-cell {
+  @apply px-4 py-2 text-left;
+}
+.row-cell {
+  @apply px-4 py-2 border-b border-sky-300;
+}
+
+/* Cards css */
+.card {
+  @apply flex flex-col w-full items-center shadow-blue-200 shadow-lg rounded-2xl p-3 space-y-20;
+}
+/* global reusable classes */
+.required::after {
+  content: " *";
+  color: red;
+}

@@ -1,0 +1,47 @@
+{
+  "assets": [
+    { "id": "1", "name": "APPL", "type": "Stock" },
+    { "id": "2", "name": "BTC", "type": "Crypto" },
+    { "id": "3", "name": "GBP", "type": "Fiat" },
+    { "id": "4", "name": "TSLA", "type": "Stock" }
+  ],
+  "prices": [
+    { "id": "101", "asset": "APPL", "price": 290.32, "asOf": "2023-05-02" },
+    { "id": "102", "asset": "BTC", "price": 45000.5, "asOf": "2023-02-04" },
+    { "id": "103", "asset": "GBP", "price": 1.25, "asOf": "2023-09-11" },
+    { "id": "106", "asset": "TSLA", "price": 1.25, "asOf": "2024-04-01" }
+  ],
+  "portfolios": {
+    "id": "p1",
+    "positions": [
+      {
+        "id": "10",
+        "asset": "1",
+        "quantity": 2,
+        "asOf": "2023-05-02",
+        "price": 1000
+      },
+      {
+        "id": "11",
+        "asset": "2",
+        "quantity": 2,
+        "asOf": "2024-02-04",
+        "price": 3500
+      },
+      {
+        "id": "12",
+        "asset": "3",
+        "quantity": 5,
+        "asOf": "2024-12-08",
+        "price": 1140
+      },
+      {
+        "id": "13",
+        "asset": "4",
+        "quantity": 15,
+        "asOf": "2025-04-01",
+        "price": 300
+      }
+    ]
+  }
+}
